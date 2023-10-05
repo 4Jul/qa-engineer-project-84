@@ -1,97 +1,97 @@
 ---
 - summary: |
     Поиск товара по ключевому слову
-requirement: |
+  requirement: |
     Пользователь имеет возможность искать товары по ключевому слову
-prerequisites: |
+  prerequisites: |
     Открыта главная страница. Поле поиска и фильтры в начальном состоянии
-test-data: |
+  test-data: |
     no data 
-steps: |
+  steps: |
     - Ввести запрос, например - iPhone
-expected-result: |
+  expected-result: |
      Отобразятся товары, где есть указанное ключевое слово 
 
 - summary: |
     Поиск товара по категории
-requirement: |
+  requirement: |
     Пользователь имеет возможность искать товары по категории
-prerequisites: |
+  prerequisites: |
     Открыта главная страница. Поле поиска и фильтры в начальном состоянии
-test-data: |
+  test-data: |
     no data
-steps: |
+  steps: |
     - Выбрать в списке категорий любую из предложенных категорий (например: laptops)
-expected-result: |
+  expected-result: |
     Отобразится список товаров по выбранной категории
 
 - summary: |
     Поиск товара по несуществующему ключевому слову
-requirement: |
+  requirement: |
     Пользователь имеет возможность искать товары по ключевому слову
-prerequisites: |
+  prerequisites: |
     Открыта главная страница. Поле поиска и фильтры в начальном состоянии
-test-data: |
+  test-data: |
    no data
-steps: |
+  steps: |
     - Ввести в поле поиска несуществующее ключевое слово (например: Aaairopp)
-expected-result: |
+  expected-result: |
     Отобразится сообщение "Nothing found!"
 
 - summary: |
     Проверка фильтра по цене
-requirement: |
+  requirement: |
     Пользователь имеет возможность искать товары по фильтру цены
-prerequisites: |
+  prerequisites: |
     Открыта главная страница. Поле поиска и фильтры в начальном состоянии
-test-data: |
+  test-data: |
     диапозон цен = от 2 до 100
-steps: |
+  steps: |
     - Выбрать опцию "В наличии"
     - Выбрать в фильтре цены диапозон от 2 до 100
-expected-result: |
+  expected-result: |
     Отобразится список товаров по введённому диапозону цены
     
 - summary: |
     Проверка наличия мобильной версии сайта
-requirement: |
+  requirement: |
    Убедиться, что сайт имеет мобильную версию и корректно отображается на мобильных устройствах
-prerequisites: |
+  prerequisites: |
    Мобильное устройство с браузером
-test-data: |
+  test-data: |
    no data
-steps: |
+  steps: |
    - Открыть сайт в браузере мобильного телефона
    - Проскроллить сайт вниз
    - Открыть раздел "Корзина"
-expected-result: |
+  expected-result: |
     Сайт открывается в мобильной версии
     
 - summary: |
     Открытие карточки товара
-requirement: |
+  requirement: |
     Пользователь имеет возможность просматривать карточку товара
-prerequisites: |
+  prerequisites: |
     Открыта главная страница, нажата опция "в наличии"
-test-data: |
+  test-data: |
     no data
-steps: |
+  steps: |
     - Выбрать любой товар
     - Нажать на выбранный товар
-expected-result: |
+  expected-result: |
     Открывается карточка выбранного товара с подробной информацией
   
 - summary: |
     Проверка добавления товара в коризину
-requirement: |
+  requirement: |
     Пользователь может добавлять товары в корзину
-prerequisites: |
+  prerequisites: |
     Открыта главная страница, нажата опция "в наличии"
-test-data: |
+  test-data: |
     no data
-steps: |
+  steps: |
     - Выбрать любой товар
     - Нажать на "Добавить в корзину"
     - Нажать на Корзину
-expected-result: |
+  expected-result: |
     Выбранный товар добавлен и отображается в корзине
