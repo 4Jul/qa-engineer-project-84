@@ -1,52 +1,52 @@
 ---
 test-cases:
- - summary: |
+  - summary: |
       Поиск товара по ключевому слову
-   status: pass
+    status: pass
 
- - summary: |
+  - summary: |
       Поиск товара по категории
-   status: pass
+    status: pass
 
- - summary: |
+  - summary: |
       Поиск товара по несуществующему ключевому слову
-   status: fail
+    status: fail
 
- - summary: |
+  - summary: |
       Проверка фильтра по цене
-   status: pass
+    status: pass
 
- - summary: |
+  - summary: |
       Проверка наличия мобильной версии сайта
-   status: pass
+    status: pass
 
- - summary: |
+  - summary: |
       Открытие карточки товара
-   status: fail
+    status: fail
 
- - summary: |
+  - summary: |
       Проверка добавления товара в корзину
-   status: pass
+    status: pass
 
 bugreports:
- - summary: |
+  - summary: |
       При поиске товара по несуществующему ключевому слову не выдается информация об ошибке
-   environment: |
-      no data
-   steps-to-reproduce: |
-      в строке поиска ввести несуществующее ключевое слово = Aaairopp
-   expected-result: |
+    environment: |
+      No data
+    steps-to-reproduce: |
+      В строке поиска ввести несуществующее ключевое слово = Aaairopp
+    expected-result: |
       Отобразится сообщение "Nothing found!"
-   actual-result: |
+    actual-result: |
       Не отображается сообщение об ошибке
       
- - summary: |
+  - summary: |
       Не происходит открытие карточки товара при нажатии на область карточки за пределами фотографии товара
-   environment: |
-      no data
-   steps-to-reproduce: |
+    environment: |
+      No data
+    steps-to-reproduce: |
       Нажать на любую область карточки любого товара на главной странице приложения
-   expected-result: |
+    expected-result: |
       Происходит открытие карточки товара при нажатии на любую область карточки, отображается карточка товара (цена, описание, фотографии товара)
-   actual-result: |
+    actual-result: |
       Не происходит открытие карточки товара при нажатии на область карточки за пределами фотографии товара
